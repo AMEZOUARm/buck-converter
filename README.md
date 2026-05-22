@@ -83,6 +83,7 @@ Avec :
 ---
 
 ## Structure du projet
+```
 buck-converter/
 ├── src/
 │   ├── buck_model.py       # Modèle circuit Buck
@@ -105,7 +106,7 @@ buck-converter/
 ├── docs/                   # Documentation détaillée
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Installation
