@@ -6,18 +6,18 @@ converter:
   frequency: 50000 # Fréquence de découpage PWM (Hz) 50 kHz
 
 components:
-  inductance: 100e-6   # Inductance L (H) = 100 µH
-  capacitance: 470e-6  # Capacité C (F) = 470 µF
+  inductance: 0.0001   # Inductance L (H) = 100 µH
+  capacitance: 0.00047  # Capacité C (F) = 470 µF
   resistance: 10.0     # Résistance de charge R (Ohm)
   esr: 0.01            # ESR condensateur (Ohm)
 
 simulation:
   duration: 0.05       # Durée de simulation (s) = 50 ms
-  timestep: 1e-7       # Pas de temps (s) = 100 ns
+  timestep: 0.0000001      # Pas de temps (s) = 100 ns
   steady_state: 0.01   # Début régime permanent (s)
 
 pi_controller:
   kp: 0.5              # Gain proportionnel
-  ki: 100.0            # Gain intégral
+  ki: 200.0            # Gain intégral
   output_min: 0.1      # Duty cycle minimum
   output_max: 0.9      # Duty cycle maximum
